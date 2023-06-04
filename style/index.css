@@ -1,0 +1,591 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.header-menu {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  padding: 8px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  height: 60px;
+  font-family: 'Karla', sans-serif;
+}
+
+.header-menu nav {
+  width: 100%;
+  justify-content: flex-start; /*onde ficarão os itens do menu, estava flex-end*/
+  display: flex;
+}
+
+.lista-menu {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  list-style: none;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.lista-menu li > a {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  text-decoration: inherit;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.lista-menu li > a:hover {
+  font-size: 28px;
+  color: rgb(231, 231, 231);
+}
+.subcontainer-principal {
+margin-right: auto;
+margin-left: auto;
+max-width: 100%;
+padding-right: 10px;
+padding-left: 10px;
+width: 100%;
+}
+.container-formacao {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+  padding-right: 0;
+  padding-left: 0; /* Margem da esquerda dos elementos*/
+  width: 100%;
+}
+.container-projetos {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 100%;
+}
+.container-footer {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.nome-completo {
+  font-size: 40px;
+  color: #9e3dff;
+  font-weight: 700;
+  height: 45px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  
+  /* Adicionando propriedades para alinhamento */
+  text-align: center;
+  margin: 0 auto;
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35vh; /* Define a altura da área de visualização */
+  max-height: 300px; /* Defin uma altura máxima para a imagem */
+}
+
+.minhafoto {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+}
+
+.texto-sobre {
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+  text-align: justify;
+  margin: 20px;
+  align-items: center;
+  margin: 0;
+}
+
+.container-texto {
+  max-width: 800px; /* Defina a largura máxima desejada */
+  margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+  padding: 20px; /* Adiciona espaçamento interno dentro da caixa de texto */
+  box-sizing: border-box; /* Mantém a largura total do contêiner incluindo padding e bordas */
+  text-align: center; /* Alinha o conteúdo ao centro */
+  border: 1px solid #1D1C1C; /* Adiciona uma borda de 1px */
+}
+
+.profissao {
+  color: #ffffff;
+  height: 60px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.topico-principal {
+  font-size: 40px;
+  color: #9e3dff;
+  margin: 50px 50px 50px 100px; 
+
+}
+.topico-secundario {
+  font-size: 35px;
+  color: #9e3dff;
+  margin: 50px 50px 50px 100px; 
+
+}
+.lista-titulo {
+  margin-bottom: 18px;
+  font-size: 26px;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+
+.lista-descricao {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  line-height: 20px;
+  color: #ffffff;
+  font-weight: 400;
+}
+/*fundo (main)*/
+.fundo {
+  background-color: #303030;
+}
+
+/*lateral fundo formação */
+.background-formacao {
+  background-color: #303030;
+}
+/*quadrado maior fundo Projetos*/
+.wrapper-portfolio {
+  background-color: #1d1c1c;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  background-color: #303030;
+  display: flex;
+  align-items: center;
+  height: 40vh;
+  padding-top: 50px; /* margem de cima */
+  padding-bottom: 40px /* Margem de baixo */
+}
+
+.lista-footer li {
+  color: #fff;
+  font-weight: 800;
+  font-size: 19px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.estilo-icon {
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.links {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.logo-html {
+  width: 127px;
+}
+.logo-js {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 102px;
+}
+
+.logo-css {
+  width: 86px;
+  margin: 10px;
+}
+
+.logo-react {
+  width: 100px;
+  margin: 3px;
+}
+
+.logo-typescript {
+  width: 98px;
+
+}
+
+.logo-bootstrap {
+  width: 120px;
+}
+
+
+/*Titulo soft skills */
+
+
+.card-proj .button1 {
+  margin-top: 23px;
+  padding: 10px 55px;
+  color: #000000;
+  background: #20B2AA;
+  border: 1px solid #555;
+  border-radius: 5px;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  text-decoration: inherit;
+  width: fit-content;
+}
+
+.card-proj .button2 {
+  margin-top: 16px;
+  padding: 10px 55px;
+  color: #000000;
+  background: #20B2AA;
+  border: 1px solid #555;
+  border-radius: 5px;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  text-decoration: inherit;
+  width: fit-content;
+}
+
+.card-proj .button1:hover,
+.card-proj .button2:hover {
+  background-color: #48D1CC;
+  transition: background-color 1s;
+  padding: 12px 56px;
+  font-size: 21px;
+}
+
+.titulo-projeto {
+  margin-left: 20px;
+  font-size: 26px;
+  color: #ffffffd4;
+}
+
+.projeto1 {
+  margin-top: 20px;
+  margin-right: 0px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.projeto2 {
+  margin-top: 20px;
+  margin-right: 0px;
+  width: 210px;
+  border-radius: 10px;
+}
+
+
+.menu {
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  margin-top: 0;
+  }
+
+
+.menu a {
+  font-size: 30px;
+  margin: 20px;
+  text-decoration: none;
+  color: rgb(19, 18, 18);
+  font-family:"Franklin Gothic Medium" ;
+  border-bottom: 4px solid #161515;
+  transition: color .3s ease-out;
+}
+
+.menu a:hover {
+  color:#161515;
+  border-bottom:none;
+  transform: scale(1.2);
+}
+
+
+.container-top {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1900px;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 100%;
+  background: #475586;
+}
+/*cartoes habilidades*/
+.father {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.card {
+  width: 100%; /* Defina a largura desejada para os cards */
+  height: 200px;
+  text-align: center;
+  padding: 10px;
+}
+.card-hover:hover .hover-text {
+  bottom: 0;
+  opacity: 1;
+}
+.hover-text {
+  position: absolute;
+  bottom: -100%; /* Posiciona o texto abaixo do card */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  background-color: #181717;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  transition: opacity 0.3s, bottom 0.3s; /* Adiciona um efeito de transição suave */
+  margin-top: 5px;
+  padding: 10px;
+  opacity:0;
+}
+.card .titulo-projeto {
+  margin-top: 20px;
+  font-size: 26px;
+  color: #ffffffd4;
+}
+.card h2 {
+  color: #e9e5e5 ;
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.card-hover {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  background-color: #303030; /*fundo dos cartoes habilidades*/
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 20px;
+}
+
+.subcontainer-principal {
+  background-color: #1D1C1C;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.article0 {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1D1C1C;
+  
+}
+
+.article0 {
+  flex: 1 1 auto;
+  max-width: 100%;
+  margin: 10px;
+  margin-left: 0;
+  margin-top:0px;
+}
+.article0 p {
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align:left;
+}
+.article1 {
+  background-color: 303030;
+}
+/*Tirando a borda branca da direita*/
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.father-proj {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centralizar horizontalmente */
+  align-items: center; /* Centralizar verticalmente */
+}
+
+.card-proj {
+  flex-basis: 300px;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  width: 300px;
+  height: 380px;
+  padding: 20px;
+  display: flex;
+  border: 4px solid;
+  border-color: #000000;
+  border-radius: 10px;
+  vertical-align: top;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Resto do seu CSS */
+
+.btn-topo {
+  position: fixed;
+  bottom: 10px;
+  right: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #9e3dff;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.btn-topo.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+@media screen and (max-width: 580px){
+  .menu, a {
+    flex-direction:column;
+    margin:5px;
+    text-align:center;
+    font-size:18px;
+    border:none;
+    background-color: #475586;
+   }
+  .links {
+    background-color: #303030;
+  }
+}
+@media (max-width: 768px) {
+  .nome-completo {
+    font-size: 30px;
+  }
+
+  .img-container {
+    height: 200px;
+  }
+
+  .texto-sobre {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .topico-principal {
+    font-size: 25px;
+  }
+
+  .descricao {
+    font-size: 16px;
+  }
+
+  .logo-html,
+  .logo-js,
+  .logo-css,
+  .logo-react,
+  .logo-typescript,
+  .logo-bootstrap {
+    width: 80px;
+  }
+
+  .button1,
+  .button2 {
+    padding: 10px 30px 10px;
+    font-size: 18px;
+  }
+
+  .titulo-projeto {
+    font-size: 20px;
+  }
+
+  .projeto1 {
+    width: 270px;
+  }
+
+  .projeto2 {
+    width: 230px;
+  }
+
+  .footer {
+    height: auto;
+    padding: 30px 0;
+  }
+
+  .lista-footer {
+    flex-direction: column;
+  }
+}
+
+.container-formacao,
+.container-projetos,
+.container-footer {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+@media (max-width: 600px) {
+  .father, .father-proj {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card, .card-proj {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* Estilos aplicados quando a largura da tela for igual ou inferior a 600px (tamanho de tela de celular) */
+  .container-texto {
+    max-width: 100%; /* Define a largura máxima como 100% para ocupar todo o espaço disponível */
+    padding: 10px; /* Reduz o espaçamento interno para ficar mais adequado em dispositivos menores */
+  }
+
+}
