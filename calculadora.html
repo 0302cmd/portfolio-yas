@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style/calculadora.css">
+</head>
+<body>
+  <h1 style="text-align: center;">Calculadora JavaScript</h1>
+  <div class="calculator">
+    <input type="text" id="display" readonly>
+    <table>
+      <tr>
+        <td><input type="button" value="7" onclick="appendToDisplay('7')"></td>
+        <td><input type="button" value="8" onclick="appendToDisplay('8')"></td>
+        <td><input type="button" value="9" onclick="appendToDisplay('9')"></td>
+        <td><input type="button" value="+" onclick="appendToDisplay('+')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="4" onclick="appendToDisplay('4')"></td>
+        <td><input type="button" value="5" onclick="appendToDisplay('5')"></td>
+        <td><input type="button" value="6" onclick="appendToDisplay('6')"></td>
+        <td><input type="button" value="-" onclick="appendToDisplay('-')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="1" onclick="appendToDisplay('1')"></td>
+        <td><input type="button" value="2" onclick="appendToDisplay('2')"></td>
+        <td><input type="button" value="3" onclick="appendToDisplay('3')"></td>
+        <td><input type="button" value="*" onclick="appendToDisplay('*')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="0" onclick="appendToDisplay('0')"></td>
+        <td><input type="button" value="C" onclick="clearDisplay()"></td>
+        <td><input type="button" value="=" onclick="calculate()"></td>
+        <td><input type="button" value="/" onclick="appendToDisplay('/')"></td>
+      </tr>
+    </table>
+  </div>
+  <script src="script/calculadora.js"></script>
+</body>
+</html>
